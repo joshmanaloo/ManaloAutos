@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <!--This allows to view the website with the device's width-->
+  <meta name="description" content="Affordable and professional services">
+  <meta name="keywords" content="affordable used vehicles, professional maintenance services, collision repair">
+  <meta name="author" content="Joshua Manalo">
+  <title>Manalo Autos | About</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1><span class="highlight">Manalo</span> Autos</h1>
+        <!--Can put a picture here-->
+      </div>
+
+      <nav>
+        <!--Nav for navigation!-->
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="inventory.html">Inventory</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li class="current"><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <section id="newsletter">
+    <div class="container">
+      <h1>Subscribe To Our Newsletter</h1>
+      <form>
+        <input type="email" placeholder="Enter Email...">
+        <button type="submit" class="button_1">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="boxes">
+    <div class="container">
+      <article id="main-col">
+        <h1 class="page-title">About Us</h1>
+        <p>Manalo Autos is an independent vehicle dealership, service centre, collision
+          repair centre and a provider of rental cars as well. We aim to be a one stop shop
+          for all automotive needs. We are a family owned business that is operating in Downtown Winnipeg
+          since 1975. <strong>Come visit us at 515 Portage Avenue</strong></p>
+
+        <p>The secret to our company's success is our ability to provide excellent customer service and
+          our ability to provide you what you need. The service department is certified to do all kinds of
+          repairs and diagnostics. The collision centre also provides rental cars while your vehicle is being repaired.
+        </p>
+
+      </article>
+
+
+      <!---
+            <aside id="sidebar">
+                <div class="dark">
+                <h3>Where We Are Located</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, esse vel aut facilis eos minima. Dolor fugit adipisci accusantium placeat laboriosam, alias et dolorum praesentium?</p>
+                </div>
+            </aside>
+        -->
+      <h3 style="text-align: center;">Where Are We Located?</h3>
+      <aside id="map">
+
+        <script>
+          // Initialize and add the map
+          function initMap() {
+            // The location of University of Winnipeg
+            var uwin = {
+              lat: 49.891,
+              lng: -97.153
+            };
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+              document.getElementById('map'), {
+                zoom: 15,
+                center: uwin
+              }); /*Control zoom here!*/
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({
+              position: uwin,
+              map: map
+            });
+          }
+        </script>
+        <!--Load the API from the specified URL
+            * The async attribute allows the browser to render the page while the API loads
+            * The key parameter will contain your own API key (which is not needed for this tutorial)
+            * The callback parameter executes the initMap() function
+            -->
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCg75Rk3kLdVVXsbYc6lqZxkiFq8OOoxw4&callback=initMap">
+        </script>
+
+      </aside>
+      <!--
+                <h2> </h2>
+                <p style ="text-align: center; padding:0%; margin: 0;a">Location: 515 Portage Avenue</p>
+                <p style ="text-align: center; padding:0%; margin: 0;">Call Us At: 1-204-123-4567</p>
+                -->
+  </section>
+
+
+
+
+
+  <footer>
+    <p>Manalo Autos, Copyright &copy; 2019</p>
+  </footer>
+
+</body>
+
+</html>
