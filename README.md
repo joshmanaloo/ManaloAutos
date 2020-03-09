@@ -7,6 +7,9 @@ Languages:
 - HTML5
 - CSS3
 
+Tools:
+- Google Maps API
+
 Version Control
 - Git
 
